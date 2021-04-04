@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="./script.js"></script>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+
+    </head>
+
+    <body>
+        <header>
+            <h1>Code Quiz</h1>
+            <nav>
+                <ul>
+                    <br>
+                        <a href="./highscores.html" class="highscores">View High Scores</a>
+                    <br>
+                    <br>
+                        <div class ="timer" id="timer">Remaining Time:</div>
+                    <br>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <div class="visible" id="start-menu">
+                <h2>Student Coding Quiz</h2>
+                <p>Complete all questions before time ends</p>
+                <button class="button" id="start-button">Start Quiz</button>
+            </div>
+            <form class="block">
+            <h2>Question 1</h2>
+                    <p>What is the argument for a conditional, that all options must be true?</p>
+                        <label for="answer">Answer</label>
+                        <select id="answer">
+                        <option value="A">A: ||</option>
+                        <option value="B">B: &&</option>
+                        <option value="C">C: null</option>
+                        <option value="D">D: Static</option>
+                        <option value="E">E: Send it</option>
+                        </select>
+                        <br>
+                        <br>
+            <h2>Question 2</h2>
+                <p>What must be typed for a line to be considered a comment?</p>
+                    <label for="answer">Answer</label>
+                    <select id="answer">
+                    <option value="A">A: comment</option>
+                    <option value="B">B: (!-- --)</option>
+                    <option value="C">C: /* */</option>
+                    <option value="D">D: *** ***</option>
+                    <option value="E">E: *ignore this line*</option>
+                    </select>
+                    <br>
+                    <br>
+            <h2>Question 3</h2>
+            <p>What do you call this procedure, or set of statements, in which it is to establish
+                a relationship between the input and output?
+            </p>
+                <label for="answer">Answer</label>
+                <select id="answer">
+                <option value="A">A: Method</option>
+                <option value="B">B: Recursion</option>
+                <option value="C">C: Algorithm</option>
+                <option value="D">D: Function</option>
+                <option value="E">E: Black Box</option>
+                </select>
+                <br>
+                <br>
+            <h2>Question 4</h2>
+            <p> True or False: Using the property "flex" on an element will cause the item to literally
+                stretch, capable of making it unreadable
+            </p>
+                <label for="answer">Answer</label>
+                <select id="answer">
+                <option value="True">True</option>
+                <option value="False">False</option>
+                </select>
+                <br>
+                <br>
+            <h2>Question 5</h2>
+            <p>The file type CSS stands for: 
+            </p>
+                <label for="answer">Answer</label>
+                <select id="answer">
+                <option value="A">A: Cast Super Sales</option>
+                <option value="B">B: Cats Seek Smothers</option>
+                <option value="C">C: Capable of Sending Sheets</option>
+                <option value="D">D: Cascading Style Sheets</option>
+                <option value="E">E: Casual Smooth Sailing </option>
+                </select>
+                <br>
+                <br>
+                <button id="save">SAVE</button>
+            </form>
+      <h3 class="message"></h3> 
+
+            <div class ="hidden" id="question-container">
+                <h2 id="questions"></h2>
+                <div id="answer-buttons"></div>
+            </div>
+            <div class="hidden" id="end-screen">
+                <h2>End of Quiz</h2>
+                <p id="YourScore">Final Score: </p>
+                    <p>Please enter your intitials</p>
+                <button id="initials-submit">Submit</button>
+                <input type="text" id="intitials">
+            </div>
+        </main>
+    </body>
+</html>
